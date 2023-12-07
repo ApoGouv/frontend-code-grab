@@ -1,2 +1,4 @@
 # frontend-code-grab
-Front end snippets collection, ready to grab and go!
+Frontend snippets collection, ready to grab and go!
+
+Github page: https://apogouv.github.io/frontend-code-grab/
