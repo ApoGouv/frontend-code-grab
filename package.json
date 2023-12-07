@@ -1,0 +1,17 @@
+{
+  "name": "frontend-code-grab",
+  "version": "1.0.0",
+  "description": "Front end snippets collection, ready to grab and go!",
+  "main": " ",
+  "dependencies": {},
+  "devDependencies": {
+    "tailwindcss": "^3.3.6"
+  },
+  "scripts": {
+    "build-css": "tailwindcss build ./src/css/tailwind-styles.css -o ./assets/css/styles.css",
+    "watch-css": "tailwindcss -i ./src/css/tailwind-styles.css -o ./assets/css/styles.css --watch"
+
+  },
+  "author": "ApoGouv",
+  "license": "ISC"
+}
