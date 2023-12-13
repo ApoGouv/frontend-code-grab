@@ -26,6 +26,11 @@ h1 {
   font-weight: bold;
 }
 
+/* Anchor */
+a {
+  color: #607D8B;
+}
+
 /* Buttons */
 button {
   background-color: #FFFFFF;
