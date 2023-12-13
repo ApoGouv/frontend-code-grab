@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Popup</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <h1 class="headline">Sometimes things popup just from nowhere!</h1>
+        <button id="popup-open">Pop It!</button>
+
+        <div id="popup-container" class="popup-container fade" style="display: none;">
+            <div class="popup">
+                <button id="popup-close" class="btn-close">&times;</button>
+                <h2 class="popup-heading">Stay awhile and listen</h2>
+                <div class="popup-content">
+                    <iframe 
+                        width="560" 
+                        height="315" 
+                        src="https://www.youtube-nocookie.com/embed/P3n8vT49ueg?si=nw-IQYy5UQvGv5Yq" 
+                        title="YouTube video player" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" 
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
