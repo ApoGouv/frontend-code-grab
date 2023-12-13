@@ -1,20 +1,56 @@
-const toasterBtnEl = document.getElementById('toasterBtn');
-const notifContainerEl = document.getElementById('notification-container');
+const notificationHandler = {
+  name: 'Notification Handler',
 
-toasterBtnEl.addEventListener('click', () => {
-  createNotification();
-});
+  toasterBtnId: 'toasterBtn',
+  notifContainerId: 'notification-container',
+  
+  toasterBtnEl: null,
+  notifContainerEl: null,
 
-function createNotification() {
-  const notif = document.createElement('div');
-  notif.classList.add('toast');
+  defaultNotificationMessage: 'Something happened! Just informing you...',
 
-  notif.innerText = 'Something happened! Just Informing you.'
+  currentMethod: null,
+  debugLogIsEnabled: false,
 
-  notifContainerEl.appendChild(notif);
+  log: function(message = '', ...args) {
+    if (this.debugLogIsEnabled) {
+      console.log(`${this.name} > [${this.currentMethod}()] ${message}: `, args);
+    }
+  },
 
-  // Delete current notification after 3s.
-  setTimeout(() => {
-    notif.remove();
-  }, 3000);
-}
+  init: function() {
+    this.currentMethod = 'init';
+    this.log('Initialization started...');
+
+    // Your code here
+    this.toasterBtnEl = document.getElementById(this.toasterBtnId);
+    this.notifContainerEl = document.getElementById(this.notifContainerId);
+
+    this.toasterBtnEl.addEventListener('click', () => {
+      this.createNotification();
+    });
+  },
+
+  createNotification: function(notificationMessage = '') {
+    this.currentMethod = 'createNotification';
+    this.log('Creating notification...');
+
+    const notif = document.createElement('div');
+    notif.classList.add('toast');
+
+    if (notificationMessage === '') {
+      notificationMessage = this.defaultNotificationMessage;
+    }
+
+    notif.innerText = notificationMessage;
+
+    this.notifContainerEl.appendChild(notif);
+
+    // Delete current notification after 3s.
+    setTimeout(() => {
+      notif.remove();
+    }, 3000);
+  }
+};
+
+notificationHandler.init();

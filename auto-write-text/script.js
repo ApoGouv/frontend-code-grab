@@ -1,5 +1,5 @@
 const typeWriterHandler = {
-  name: 'Typewriter',
+  name: 'Typewriter handler',
   // init variables.
   text: 'Some catchy heading that auto-magically is written in front of you <3',
   
@@ -10,12 +10,18 @@ const typeWriterHandler = {
   writerSpeed: 100,
   delayBeforeReWrite: 1000,
 
+  currentMethod: null,
   debugLogIsEnabled: false,
 
-  init: function() {
+  log: function(message = '', ...args) {
     if (this.debugLogIsEnabled) {
-      console.log(`${this.name} > Init > started...`);
+      console.log(`${this.name} > [${this.currentMethod}()] ${message}: `, args);
     }
+  },
+
+  init: function() {
+    this.currentMethod = 'init';
+    this.log('started...');
     
     this.textContainerEl = document.getElementById(this.textContainerID);
     this.charIndex = 0;
@@ -37,9 +43,8 @@ const typeWriterHandler = {
   },
 
   typeWriter: function() {
-    if (this.debugLogIsEnabled) {
-      console.log(`${this.name} > typeWriter > called for charIndex: ${this.charIndex}.`);
-    }
+    this.currentMethod = 'typeWriter';
+    this.log('called for charIndex', this.charIndex);
     
     if (! this.textContainerEl) {
       this.textContainerEl = document.getElementById(this.textContainerID);
@@ -50,8 +55,6 @@ const typeWriterHandler = {
 
     // If we have reached the end of the text, reset the index to zero.
     if (this.charIndex > this.text.length) {
-      console.log('charIndex: ', this.charIndex);
-      console.log('text ln: ', this.text.length -1);
       this.charIndex = 0;
 
       // Now call typeWriter again after the delay
