@@ -17,7 +17,7 @@ const popupHandler = {
   transitionCloseDelay: 1000,
 
   currentMethod: null,
-  debugLogIsEnabled: true,
+  debugLogIsEnabled: false,
 
   log: function(message = '', ...args) {
     if (this.debugLogIsEnabled) {
