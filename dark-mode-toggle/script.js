@@ -1,3 +1,5 @@
+"use strict";
+
 const darkModeToggleHandler = {
   name: 'SkeletonSnippet handler',
 

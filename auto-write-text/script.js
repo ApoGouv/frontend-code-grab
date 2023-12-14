@@ -1,3 +1,5 @@
+"use strict";
+
 const typeWriterHandler = {
   name: 'Typewriter handler',
   // init variables.

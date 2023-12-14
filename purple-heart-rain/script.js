@@ -1,3 +1,5 @@
+"use strict";
+
 const purpleHeartRainHandler = {
   name: 'Purple Heart Rain handler',
 

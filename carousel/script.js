@@ -1,3 +1,5 @@
+"use strict";
+
 const carouselHandler = {
   name: 'Carousel handler',
 

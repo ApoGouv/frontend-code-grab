@@ -1,3 +1,5 @@
+"use strict";
+
 const skeletonSnippetHandler = {
   name: 'SkeletonSnippet handler',
 

@@ -1,3 +1,5 @@
+"use strict";
+
 const backgroundChangerHandler = {
   name: 'SkeletonSnippet handler',
 

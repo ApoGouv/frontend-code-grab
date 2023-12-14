@@ -1,3 +1,5 @@
+"use strict";
+
 const hamburgerButtonHandler = {
   name: 'Hamburger Button handler',
 

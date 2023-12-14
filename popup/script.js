@@ -1,3 +1,5 @@
+"use strict";
+
 const popupHandler = {
   name: 'Popup handler',
 
