@@ -1,3 +1,5 @@
+"use strict";
+
 const notificationHandler = {
   name: 'Notification Handler',
 
