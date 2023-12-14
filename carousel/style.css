@@ -1,0 +1,22 @@
+/* #######################
+# START - Snippet Styles #
+# ######################## */
+
+.carousel {
+    height: 500px;
+    width: 500px;
+    overflow: hidden;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.images-container {
+    display: flex;
+    transition: transform 0.3s linear;
+    transform: translateX(0);
+}
+
+img {
+    height: 500px;
+    width: 500px;
+    object-fit: cover;
+}
