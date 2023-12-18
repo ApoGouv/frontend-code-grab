@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Calculator App</title>
+    <link href="./../assets/css/snippets-main.css" rel="stylesheet" media="all" />
+    <link href="style.css" rel="stylesheet" media="all" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <h1 class="headline">Simple Calculator App</h1>
+    <div id="calculator" class="calculator">
+      <div class="screens-container">
+        <div class="formula-screen">
+          <input type="text" id="formula" readonly value="">
+        </div>
+        <div class="display-screen">
+          <input type="text" id="display" readonly value="0">
+        </div>
+      </div>
+
+      <div class="buttons-grid">
+        <button id="clear" class="btn btn-calc btn-calc-clear-all" data-action="clear-all">C</button>
+        <button id="sign" class="btn btn-calc btn-calc-sign" data-action="toggle-sign">&plusmn;</button>
+        <button id="remainder" class="btn btn-calc btn-calc-remainder" data-action="remainder">%</button>
+        <button id="divide" class="btn btn-calc btn-calc-divide" data-action="divide">&divide;</button>
+
+        <button id="seven" class="btn btn-calc btn-calc-7" value="7">7</button>
+        <button id="eight" class="btn btn-calc btn-calc-8" value="8">8</button>
+        <button id="nine" class="btn btn-calc btn-calc-9" value="9">9</button>
+        <button id="multiply" class="btn btn-calc btn-calc-multiply" data-action="multiply">&times;</button>
+        
+        <button id="four" class="btn btn-calc btn-calc-4" value="4">4</button>
+        <button id="five" class="btn btn-calc btn-calc-5" value="5">5</button>
+        <button id="six" class="btn btn-calc btn-calc-6" value="6">6</button>
+        <button id="subtract" class="btn btn-calc btn-calc-subtract" data-action="subtract">&minus;</button>
+
+        <button id="one" class="btn btn-calc btn-calc-1" value="1">1</button>
+        <button id="two" class="btn btn-calc btn-calc-2" value="1">2</button>
+        <button id="three" class="btn btn-calc btn-calc-3" value="3">3</button>
+        <button id="zero" class="btn btn-calc btn-calc-0" value="0">0</button>
+        
+        <button id="decimal" class="btn btn-calc btn-calc-decimal" data-action="decimal">&sdot;</button>
+        <button id="equals" class="btn btn-calc btn-calc-equals" data-action="equals">&equals;</button>
+        <button id="add" class="btn btn-calc btn-calc-add" data-action="add">&plus;</button>
+      </div>
+    </div>
+  </body>
+</html>

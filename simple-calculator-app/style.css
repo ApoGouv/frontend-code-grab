@@ -1,0 +1,86 @@
+/* #######################
+# START - Snippet Styles #
+# ######################## */
+
+#calculator {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  column-gap: 8px;
+}
+
+.formula-screen input {
+  width: 100%;
+  font-size: 1.5rem;
+  height: 45px;
+  border: none;
+  background-color: #494949;
+  color: #fff;
+  text-align: right;
+  padding-right: 20px;
+  padding-left: 10px;
+}
+
+.display-screen input {
+  width: 100%;
+  font-size: 5rem;
+  height: 80px;
+  border: none;
+  background-color: #252525;
+  color: #fff;
+  text-align: right;
+  padding-right: 20px;
+  padding-left: 10px;
+}
+
+.buttons-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+.btn.btn-calc {
+  height: 60px;
+  background-color: #fff;
+  border-radius: 3px;
+  border: 1px solid #c4c4c4;
+  font-size: 2rem;
+  color: #333;
+  background-image: linear-gradient(to bottom, transparent, transparent 50%, rgba(0, 0, 0, .04));
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .05), inset 0 1px 0 0 rgba(255, 255, 255, .45), inset 0 -1px 0 0 rgba(255, 255, 255, .15), 0 1px 0 0 rgba(255, 255, 255, .15);
+  text-shadow: 0 1px rgba(255, 255, 255, .4);
+  transition: all 0.3s;
+  animation-timing-function: linear;
+}
+
+.btn-calc:hover {
+  background-color: #eaeaea;
+}
+
+.btn-calc.btn-calc-clear-all {
+  background-color: #f0595f;
+  border-color: #b0353a;
+  color: #fff;
+}
+
+.btn-calc.btn-calc-clear-all:hover {
+  background-color: #f17377;
+}
+
+.btn-calc.btn-calc-equal {
+  background-color: #2e86c0;
+  border-color: #337cac;
+  color: #fff;
+}
+
+.btn-calc.btn-calc-equal:hover {
+  background-color: #4e9ed4;
+}
+
+.btn-calc.btn-calc-add {
+  height: 100%;
+  grid-row: 4 / 6;
+  grid-column: 4 / 5;
+}
