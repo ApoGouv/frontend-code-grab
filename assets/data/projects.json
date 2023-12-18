@@ -21,7 +21,7 @@
     "title": "Popup / Modal",
     "description": "Build a customizable popup or modal for displaying additional content.",
     "tags": ["UI", "modal"],
-    "link": "./popup-modal"
+    "link": "./popup"
   },
   {
     "title": "Purple Heart Rain",
