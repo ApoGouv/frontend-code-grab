@@ -1,0 +1,62 @@
+[
+  {
+    "title": "Hamburger Button",
+    "description": "Create an animated hamburger button for navigation menus.",
+    "tags": ["animation", "navigation"],
+    "link": "/hamburger-button"
+  },
+  {
+    "title": "Toast Notification",
+    "description": "Implement toast notifications to display brief messages to users.",
+    "tags": ["UI", "notification"],
+    "link": "/toast-notification"
+  },
+  {
+    "title": "Auto Write Text",
+    "description": "Create a typewriter effect to automatically write and display text.",
+    "tags": ["animation", "text"],
+    "link": "/auto-write-text"
+  },
+  {
+    "title": "Popup / Modal",
+    "description": "Build a customizable popup or modal for displaying additional content.",
+    "tags": ["UI", "modal"],
+    "link": "/popup-modal"
+  },
+  {
+    "title": "Purple Heart Rain",
+    "description": "Generate a visual effect of falling purple hearts on the screen.",
+    "tags": ["animation", "visual-effects"],
+    "link": "/purple-heart-rain"
+  },
+  {
+    "title": "Background Changer",
+    "description": "Allow users to change the background color or image of a webpage.",
+    "tags": ["UI", "color", "background"],
+    "link": "/background-changer"
+  },
+  {
+    "title": "Dark mode toggle",
+    "description": "Implement a toggle switch to enable or disable dark mode.",
+    "tags": ["UI", "dark-mode"],
+    "link": "/dark-mode-toggle"
+  },
+  {
+    "title": "Carousel",
+    "description": "Create an image carousel or slider for showcasing multiple images.",
+    "tags": ["UI", "carousel"],
+    "link": "/carousel"
+  },
+  {
+    "title": "Sound Board",
+    "description": "Build a sound board with buttons to play different sounds.",
+    "tags": ["audio", "UI"],
+    "link": "/sound-board"
+  },
+  {
+    "title": "Zoom effect",
+    "description": "Implement a zoom effect on images or other elements.",
+    "tags": ["UI", "zoom"],
+    "link": "/zoom-effect"
+  }
+]
