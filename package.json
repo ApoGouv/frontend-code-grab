@@ -10,7 +10,6 @@
   "scripts": {
     "build-css": "tailwindcss build ./src/css/tailwind-styles.css -o ./assets/css/styles.css",
     "watch-css": "tailwindcss -i ./src/css/tailwind-styles.css -o ./assets/css/styles.css --watch"
-
   },
   "author": "ApoGouv",
   "license": "ISC"
